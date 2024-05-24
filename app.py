@@ -9,7 +9,8 @@ from pyngrok import ngrok
 app = Flask(__name__)
 
 # Load your trained model
-model = tf.keras.models.load_model('/home/slimane/Downloads/model_cnn (1).h5')
+model_path = '/content/drive/MyDrive/model_cnn (1).h5'
+model = tf.keras.models.load_model(model_path)
 
 
 def preprocess_image(image):
